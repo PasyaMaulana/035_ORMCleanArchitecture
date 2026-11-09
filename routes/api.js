@@ -4,8 +4,8 @@ const komikController = require('../controller/komikController');
 
 router.get('/komik', komikController.getAllKomik);
 router.get('/komik/:id', komikController.getKomikById);
-router.get('/komik', komikController.createKomik);
-router.get('/komik/:id', komikController.updateKomik);
-router.get('/komik/:id', komikController.deleteKomik);
+router.post('/komik', komikController.createKomik);
+router.put('/komik/:id', komikController.updateKomik);
+router.deletecl('/komik/:id', komikController.deleteKomik);
 
 module.exports = router;
